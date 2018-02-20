@@ -214,10 +214,11 @@ div.title-search-result td.title-search-price span {
 #search input[type=text] {
     margin: inherit 4px;
     padding: 0 15px;
-    border: 1px solid #CCD5DB;
-    background: #f8fafc;
+    border: 1px solid #ebebeb;
+    background: transparent;
     outline: none;
 	border-radius: 50px;
+    box-shadow: none;
 }
 
 #search input[type=text]:hover, #search input[type=text]:focus {

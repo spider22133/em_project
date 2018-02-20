@@ -42,7 +42,7 @@ Screen style's
 .catalog-container {
     width: 100%;
     margin: 0 auto;
-    background: #D9017A;
+    /*background: #D9017A;*/
 }
 
 .catalog-mobile {
@@ -133,33 +133,33 @@ Screen style's
 
 .catalog > ul > li {
     float: left;
-    background: #D9017A;
+    background: transparent;
     padding: 0;
     margin: 0;
     width: calc(100% / 6.5);
     width: 15,3846%;
     text-align: -webkit-match-parent;
     /* border-right: 1px solid #d52257; */
-    border-left: 1px solid #FF5587;
+    border-left: 1px solid #ebebeb;
 }
 
 .catalog > ul > li:nth-child(2) {
-    border-left: 1px solid #FF5587;}
+    border-left: 1px solid #ebebeb;}
 
 .catalog > ul > li:last-child  {
-    border-right: 1px solid #FF5587;}
+    border-right: 1px solid #ebebeb;}
 
 
 
 .catalog > ul > li > a {
-    font-size: 0.9em;
     text-decoration: none;
     height: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 40px;
     display: block;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    color: #000;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
