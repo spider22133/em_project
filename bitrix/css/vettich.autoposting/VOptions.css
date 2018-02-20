@@ -1,0 +1,187 @@
+input[type='group'] {
+	display: none;
+}
+
+.voptions-description{
+	border-radius: 4px;
+	border: 1px solid #D7D6BA;
+	background-color: #FEFDEA;
+	margin: 5px;
+	padding: 3px;
+}
+
+.voptions-add-button{
+	box-shadow: 0 0 1px rgba(0,0,0,.3), 0 1px 1px rgba(0,0,0,.3), inset 0 1px 0 #fff, inset 0 0 1px rgba(255,255,255,.5);
+	/*background-color: #e0e9ec;*/
+	background-image: -webkit-linear-gradient(bottom, #d7e3e7, #fff) !important;
+	background-image: -moz-linear-gradient(bottom, #d7e3e7, #fff)!important;
+	background-image: -ms-linear-gradient(bottom, #d7e3e7, #fff)!important;
+	background-image: -o-linear-gradient(bottom, #d7e3e7, #fff)!important;
+	background-image: linear-gradient(bottom, #d7e3e7, #fff)!important;
+	background-color: #CCD7DB;
+	margin: 4px;
+	padding: 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.voptions-add-button:hover{
+	background-image: -webkit-linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+	background-image: -moz-linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+	background-image: -ms-linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+	background-image: -o-linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+	background-image: linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+}
+
+.voptions-group-container{
+	padding: 4px;
+}
+
+.voptions-group-div{
+	background-color: #E5EEEF;
+	border-radius: 4px;
+	padding: 6px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.voptions-group-table{
+	width: 100%
+}
+
+.voptions-group-title{
+	background-color: #D9E2E4;
+	/*width: 100%;*/
+	text-align: center;
+	padding: 5px;
+	margin: 3px;
+	margin-right: 0;
+	margin-left: 0;
+	border-radius: 30px 30px 0 0;
+}
+.voptions-group-description{
+	border-radius: 4px;
+	border: 1px solid #D7D6BA;
+	background-color: #FEFDEA;
+	margin: 5px;
+	margin-right: 0;
+	margin-left: auto;
+	width: 60%;
+	padding: 3px;
+} 
+
+.voptions-textarea-choise-checkbox{
+	display: none !important;
+}
+
+.voptions-textarea-choise-checkbox-label{
+	text-decoration: none;
+	border-bottom: 1px dashed #000080;
+	cursor: pointer;
+}
+
+.voptions-textarea-choise-checkbox:checked ~ .voptions-textarea-choise-checkbox-label{
+
+}
+
+.voptions-textarea-choise{
+	display: none;
+}
+
+/*.voptions-textarea-choise::before{
+	padding: 6px;
+	padding-bottom: 8px;
+	font-size: 14px;
+	content: "Нажмите на св-во, чтобы вставить его";
+}
+*/
+.voptions-textarea-choise-checkbox:checked ~ .voptions-textarea-choise{
+	display: block;
+}
+
+.voptions-textarea-choise-simple{
+	padding: 2px;
+}
+
+.voptions-textarea-choise-simple a{
+	text-decoration: none;
+	border-bottom: 1px dashed;
+	color: blue;
+	position: relative;
+}
+
+.voptions-textarea-choise-simple a:hover{
+	color: black;
+}
+
+.voptions-help{
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	color: #222;
+	outline: none;
+}
+
+.voptions-help-btn::before {
+	content: "(?)";
+}
+
+.voptions-help .voptions-help-text{
+	text-align: left;
+	visibility: hidden;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	z-index: 999;
+	width: 230px;
+	margin-left: -127px;
+	padding: 10px;
+	border-color: #A2A6AD #989CA1 #8E9398;
+	opacity: .9;
+	background: transparent linear-gradient(to bottom, rgba(227, 233, 234, 0.99), rgba(198, 210, 213, 0.99)) repeat scroll 0% 0%;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.25) !important;
+}
+
+.voptions-help:hover .voptions-help-text{
+	visibility: visible;
+}
+
+.voptions-help .voptions-help-text:before,
+.voptions-help .voptions-help-text:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1000;
+	bottom: -7px;
+	left: 50%;
+	margin-left: -8px;
+	border-top: 8px solid #ddd;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 0;  
+}
+
+.voptions-help .voptions-help-text:before
+{
+	border-top-color: #ccc;
+	bottom: -8px;
+}
+
+.voptions-overlay{
+	background-color: #000;
+	opacity: 0.30;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}

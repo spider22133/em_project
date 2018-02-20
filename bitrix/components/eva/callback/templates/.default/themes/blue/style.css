@@ -1,0 +1,5 @@
+#fhead {background: url(images/plash.png) no-repeat 0 0;} 
+.frm_place{border-left: 1px solid #71ad00; border-right: 1px solid #71ad00;}
+form#call_ord input[type="submit"]{background: #71ad00; color:#fff;}
+form#call_ord div.bsubm p.warn{color:#71ad00;}
+#fbott{background: url(images/plash.png) no-repeat 0 -56px;}

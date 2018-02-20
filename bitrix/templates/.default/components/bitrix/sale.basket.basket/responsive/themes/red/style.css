@@ -1,0 +1,48 @@
+.bx_ordercart.bx_red .bx_ordercart_order_pay_center .checkout{
+	text-shadow: none;
+	background: #D9017A;
+	color: #fff;
+}
+.bx_ordercart.bx_red .bx_ordercart_order_pay_center .checkout:hover{
+	text-shadow: none;
+	background: #f05180;
+}
+.bx_ordercart.bx_red .bx_ordercart_order_pay_center .checkout:active{
+	text-shadow: none;
+	background: #f05180;
+}
+.bx_ordercart.bx_red .bx_bt_button  			{
+	text-shadow: none;
+	background: #D9017A;
+	color: #fff;
+}
+.bx_ordercart.bx_red .bx_bt_button:hover  		{
+	text-shadow: none;
+	background: #f05180;
+}
+.bx_ordercart.bx_red .bx_bt_button:active  		{
+	text-shadow: none;
+	background: #f05180;
+}
+.bx_ordercart.bx_red .bx_item_detail_size_small_noadaptive ul li .cnt				 	{border: 1px solid #d35841}
+.bx_ordercart.bx_red .bx_item_detail_size_small_noadaptive ul li:hover .cnt  			{border: 1px solid #a9331c}
+.bx_ordercart.bx_red .bx_item_detail_size_small_noadaptive ul li:active .cnt,
+.bx_ordercart.bx_red .bx_item_detail_size_small_noadaptive ul li.bx_active .cnt  		{border: 2px solid #a9331c}
+
+.bx-retina .bx_ordercart.bx_red .bx_item_detail_size_small_noadaptive ul li.bx_active .cnt{
+	-webkit-border-image: url(images/x2border_active.png) 2 stretch;
+	-moz-border-image: url(images/x2border_active.png) 2 stretch;
+	-o-border-image: url(images/x2border_active.png) 2 stretch;
+	border-image: url(images/x2border_active.png) 2 fill stretch;
+}
+.bx_ordercart.bx_red .bx_item_detail_scu_small_noadaptive .bx_scu ul li .cnt  				{border: 1px solid #d35841}
+.bx_ordercart.bx_red .bx_item_detail_scu_small_noadaptive .bx_scu ul li:hover .cnt  			{border: 1px solid #a9331c}
+.bx_ordercart.bx_red .bx_item_detail_scu_small_noadaptive .bx_scu ul li:active .cnt,
+.bx_ordercart.bx_red .bx_item_detail_scu_small_noadaptive .bx_scu ul li.bx_active .cnt  		{border: 2px solid #a9331c}
+
+.bx-retina .bx_ordercart.bx_red .bx_item_detail_scu_small_noadaptive .bx_scu ul li.bx_active .cnt{
+	-webkit-border-image: url(images/x2border_active.png) 2 stretch;
+	-moz-border-image: url(images/x2border_active.png) 2 stretch;
+	-o-border-image: url(images/x2border_active.png) 2 stretch;
+	border-image: url(images/x2border_active.png) 2 fill stretch;
+}

@@ -1,0 +1,9 @@
+<?
+
+$MESS['VettichAutopostingMenu_Text'] = 'Автопубликация в соц. сети (v. '.\Bitrix\Main\ModuleManager::getVersion('vettich.autoposting').')';
+$MESS['VettichAutopostingMenu_Logs'] = 'Журнал';
+$MESS['VettichAutopostingMenu_Posts'] = 'Публикации';
+$MESS['VettichAutopostingMenu_Posts_Title'] = 'Настройка публикаций';
+$MESS['VettichAutopostingMenu_Settings'] = 'Настройки';
+$MESS['VettichPostingMenu_Accounts'] = 'Аккаунты';
+$MESS['ERRORS_LOG_MESSAGE'] = 'При публикации в соц. сети возникла(и) ошибка(и). Подробнее можно посмотреть в <a href="'.BX_ROOT.'/admin/vettich_autoposting_logs.php">журнале</a>';

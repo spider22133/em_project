@@ -1,0 +1,1 @@
+<img alt="Интернет-магазин бижутерии Gem.style" src="/include/logo.png"  />

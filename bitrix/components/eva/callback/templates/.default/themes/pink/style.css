@@ -1,0 +1,5 @@
+#fhead {background: #da3676;} 
+.frm_place{border-left: 1px solid #da3676; border-right: 1px solid #da3676;}
+form#call_ord input[type="submit"]{background: #da3676; color:#fff;}
+form#call_ord div.bsubm p.warn{color:#da3676;}
+#fbott{background: #da3676;}

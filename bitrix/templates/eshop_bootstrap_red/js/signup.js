@@ -1,0 +1,1 @@
+jQuery(document).ready(function(t){t(".hide-password").on("click",function(){var e=t(this),r=e.prev("input");"password"==r.attr("type")?r.attr("type","text"):r.attr("type","password"),"Показать"==e.text()?e.text("Скрыть"):e.text("Показать")})});

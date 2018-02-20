@@ -1,0 +1,171 @@
+.bx-wrapper .bx-next { width:32px; height:32px; }
+.bx-prev {z-index:100 !important;}
+.bx-next {z-index:100 !important;}
+.bxslider li div { text-align: center; width: 100%; display: block; }
+.bx-wrapper img { display: inline-block;max-width: 100%; }
+.bx-wrapper .bx-viewport
+{
+	box-shadow: 0 0 0px !important;
+	border: 0px;
+	left: 0px;
+
+}
+.bx-wrapper .bx-controls-direction a
+{
+	bottom: -31px;
+	width: 56px !important;
+	height: 53px !important;
+}
+.bx-prev
+{
+	display: none;	
+	z-index:100 !important;
+	background: url(images/rhinoslider-sprite.png) 0 0 !important;
+	background-position: -168px 0 !important;
+	left: -5px !important;
+	top: inherit !important;
+	bottom: -4px;
+
+}
+.bx-prev-bottom
+{
+	z-index:100 !important;
+	background: url(images/rhinoslider-sprite1.png) 0 0 !important;
+	background-position: -168px 0 !important;
+	left: -5px !important;
+	top: inherit !important;
+	bottom: -4px;
+}
+.bx-prev:hover
+{
+	background-position: -168px -53px !important;
+}
+.bx-prev-bottom:hover
+{
+	background-position: -168px -53px !important;
+}
+.bx-next 
+{
+	display: none;
+	z-index:100 !important;
+	background: url(images/rhinoslider-sprite.png)!important;
+	background-position: -106px 0 !important;
+	right: -6px !important;
+	top: inherit !important;
+	bottom: -4px;
+
+}
+.bx-next-top
+{
+	z-index:100 !important;
+	background: url(images/rhinoslider-sprite1.png)!important;
+	background-position: -106px 0 !important;
+	right: -6px !important;
+	top: inherit !important;
+	bottom: -4px;
+}
+.bx-next:hover
+{
+	background-position: -106px -53px !important;
+}
+.bx-next-top:hover
+{
+	background-position: -106px -53px !important;
+}
+.bx-pager-link
+{
+	font-weight: initial;
+	text-indent: 0 !important;
+	display: block !important;
+	width: 16px !important;
+	height: 15px !important;
+	cursor: pointer;
+	background: white !important;
+	font-size: 10px;
+	text-align: center;
+	padding: 6px 0 5px 0;
+	color: #333;
+	text-decoration: none;
+	-webkit-user-select: none;
+	border-radius: 0px !important;
+	text-decoration: none !important;
+}
+.active
+{
+	font-weight: initial;
+	text-indent: 0 !important;
+	display: block !important;
+	width: 16px !important;
+	height: 15px !important;
+	cursor: pointer;
+	font-size: 10px;
+	text-align: center;
+	padding: 6px 0 5px 0;
+	color: #333;
+	text-decoration: none;
+	-webkit-user-select: none;
+	border-radius: 0px !important;
+	text-decoration: none !important;
+	background: #1fbed9 !important;
+}
+
+
+.bx-pager-link:hover
+{
+	color: #999;
+	background: #eee !important;
+
+}
+.active:hover
+{
+	color: #333;
+	background: #1fbed9 !important;
+}
+.bx-wrapper .bx-pager {
+
+	display: none;
+	background: none;
+	//display: inline-block;
+	padding:0;
+	margin: 0px auto;
+	z-index: 100;
+}
+
+.bx-wrapper .bx-pager:before {
+     background: url("images/rhinoslider-sprite.png") no-repeat scroll -224px 0px transparent;
+     content: " ";
+     display: inline-block;
+     height: 26px;
+     vertical-align: bottom;
+     width: 16px;
+}
+
+.bx-wrapper .bx-pager:after {
+     background: url("images/rhinoslider-sprite.png") no-repeat scroll -240px 0 rgba(0, 0, 0, 0);
+     content: " ";
+     display: inline-block;
+     height: 26px;
+     vertical-align: bottom;
+     width: 16px;
+}
+
+.bx-controls.bx-has-pager.bx-has-controls-direction {
+     margin-top: -27px;
+     position: relative;
+}
+ .bx-pager-item {
+    background: #fff;
+}
+.bx-pager
+{
+	display: none;
+}
+
+
+
+
+
+
+
+
+

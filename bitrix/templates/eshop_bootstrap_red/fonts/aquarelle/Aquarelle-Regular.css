@@ -1,0 +1,11 @@
+/** Created by TTF.in.ua **/
+@font-face {
+    font-family: 'Aquarelle-Regular';
+    src: url('Aquarelle-Regular.eot');
+    src: url('Aquarelle-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Aquarelle-Regular.woff') format('woff'),
+         url('Aquarelle-Regular.ttf') format('truetype'),
+         url('Aquarelle-Regular.svg#Aquarelle-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

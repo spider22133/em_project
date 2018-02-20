@@ -1,0 +1,3 @@
+<?
+$MESS["SS_TITLE"] = "SOCIAL NETWORKS";
+?>

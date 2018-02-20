@@ -1,0 +1,5 @@
+.bx-wrapper .bx-next { width:32px; height:32px; }
+.bx-prev {z-index:100 !important;}
+.bx-next {z-index:100 !important;}
+.bxslider li div { text-align: center; width: 100%; display: block; }
+.bx-wrapper img { display: inline-block;max-width: 100%; }

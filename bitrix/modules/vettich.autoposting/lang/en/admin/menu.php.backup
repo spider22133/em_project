@@ -1,0 +1,8 @@
+<?
+
+$MESS['VettichAutopostingMenu_Text'] = 'Autoposting to social networks (v. '.\Bitrix\Main\ModuleManager::getVersion('vettich.autoposting').')';
+$MESS['VettichAutopostingMenu_Logs'] = 'Logs';
+$MESS['VettichAutopostingMenu_Posts'] = 'Publications';
+$MESS['VettichAutopostingMenu_Posts_Title'] = 'Publications setting';
+$MESS['VettichAutopostingMenu_Settings'] = 'Settings';
+$MESS['VettichPostingMenu_Accounts'] = 'Accounts';

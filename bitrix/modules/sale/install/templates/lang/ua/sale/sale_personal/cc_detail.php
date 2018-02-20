@@ -1,0 +1,30 @@
+<?
+$MESS["STPC_TITLE_UPDATE"] = "Зміна параметрів карти №#ID#";
+$MESS["STPC_TITLE_ADD"] = "Додавання нової карти";
+$MESS["STPC_TO_LIST"] = "Повернутися до списку карт";
+$MESS["STPC_TIMESTAMP"] = "Дата останньої зміни:";
+$MESS["STPC_ACTIV"] = "Активність:";
+$MESS["STPC_SORT"] = "Індекс сортування:";
+$MESS["STPC_PAY_SYSTEM"] = "Платіжна система:";
+$MESS["STPC_CURRENCY"] = "Валюта, яку можна знімати з карти:";
+$MESS["STPC_ANY"] = "(Будь-яка)";
+$MESS["STPC_TYPE"] = "Тип карти:";
+$MESS["STPC_CNUM"] = "Номер картки:";
+$MESS["STPC_CEXP"] = "Карта закінчує дію:";
+$MESS["STPC_MIN_SUM"] = "Мінімальна сума, яку можна зняти з картки:";
+$MESS["STPC_MAX_SUM"] = "Максимальна сума, яку можна зняти з картки:";
+$MESS["STPC_SUM_CURR"] = "Валюта сум:";
+$MESS["STPC_SAVE"] = "Зберегти";
+$MESS["STPC_APPLY"] = "Застосувати";
+$MESS["STPC_CANCEL"] = "Скасування";
+$MESS["STPC_NO_AUTH"] = "Для перегляду карти необхідно авторизуватися на сайті";
+$MESS["STPC_NO_CARD"] = "Карта не знайдена";
+$MESS["STPC_EMPTY_PAY_SYS"] = "Не заповнено поле \"Платіжна система\"";
+$MESS["STPC_EMPTY_CARD_TYPE"] = "Не заповнено поле \"Тип пластикової карти\"";
+$MESS["STPC_EMPTY_CARDNUM"] = "Не заповнено поле \"Номер пластикової карти\"";
+$MESS["STPC_WRONG_CARDNUM"] = "Некоректний номер пластикової карти";
+$MESS["STPC_WRONG_MONTH"] = "Некоректний місяць закінчення дії картки";
+$MESS["STPC_WRONG_YEAR"] = "Некоректний рік закінчення дії картки";
+$MESS["STPC_EMPTY_BCURRENCY"] = "Чи не вказана валюта для сум меж застосування карти";
+$MESS["STPC_ERROR_SAVING_CARD"] = "Помилка збереження пластикової карти";
+?>

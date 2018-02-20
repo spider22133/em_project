@@ -1,0 +1,60 @@
+.bx-wrapper .bx-next { width:32px; height:32px; }
+.bx-prev 
+{
+	bottom: 0px;
+	z-index:100 !important;
+	background: url(images/prev.png) center center no-repeat #222 !important;
+	left: inherit !important;
+	right: 32px;
+	opacity: 0.6;
+}
+.bx-prev:hover
+{
+	opacity: 1;
+}
+.bx-next 
+{
+	bottom: 0px;
+	z-index:100 !important;
+	background: url(images/next.png) center center no-repeat #222 !important;
+	right: 0px !important;
+	opacity: 0.6;
+
+}
+.bx-next:hover
+{
+	opacity: 1;
+}
+.bx-wrapper .bx-controls-direction a
+{
+	top: inherit !important;
+	margin-top: inherit !important;
+}
+.act
+{
+	
+	border-top: 3px #cb5432 solid;
+}
+.active
+{
+	display: inline !important;
+}
+.pager
+{
+	margin-left: -5px;
+}
+#bx-pager
+{
+	text-align: center;
+	margin-top: -60px;
+}
+.bx-wrapper .bx-viewport
+{
+	//webkit-box-shadow: 0 0 0px !important;
+	box-shadow: 0 0 0px !important;
+	border: 0px;
+	left: 0px;
+
+}
+.bxslider li div { text-align: center; width: 100%; display: block; }
+.bx-wrapper img { display: inline-block;max-width: 100%; }

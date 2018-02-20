@@ -1,0 +1,5 @@
+<?
+$MESS['SMART_CALL_THEME_BLUE'] = 'Blue';
+$MESS['SMART_CALL_THEME_PINK'] = 'Pink';
+$MESS['SMART_CALL_TEMPLATE_THEME'] = 'Theme of form';
+?>

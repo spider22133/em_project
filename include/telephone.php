@@ -1,0 +1,1 @@
+<i class="lifecell"></i><a href="tel:+380937207020"><span style="font-size: 16px; padding:0 7px 0 0;"> (093) 720-70-20</span></a> <i class="kievstar"></i><a href="tel:+380977207020"><span style="font-size: 16px; padding-right: 10px"> (097) 720-70-20</span></a>

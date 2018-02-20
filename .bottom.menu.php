@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Серьги",
+		"catalog/ukrasheniya/sergi/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Браслеты",
+		"catalog/ukrasheniya/braslety_1/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Бусины",
+		"catalog/furnitura/businy/",
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Замки",
+		"catalog/furnitura/zamki/",
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

@@ -1,0 +1,163 @@
+.modal-title {
+	font-size:28px;
+	text-align:center;
+	color:#505050;
+}
+.modal-body {
+	padding:30px !important;
+	font-family:"Trebuchet MS";
+	font-size:14px;
+}
+.modal-body .alert-warning {
+	border:1px solid #faebcc;
+	display:none;
+}
+
+.modal-footer {
+	text-align:center !important;
+}
+
+.form-group {
+	width:100%;
+}
+.form-group-measure {
+	margin:10px 0 0 10px;
+	float:left;
+}
+.popup-required {
+	color:#f95552;
+}
+.popup-form label {
+	font-weight:normal;
+}
+.popup-label {
+	display:block;
+}
+
+.popup-pic {
+	text-align:center;
+	margin-bottom:15px;
+}
+.popup-pic .img-responsive {
+	display:inline-block;
+	max-height:120px;
+}
+.popup-element {
+	font-size:18px;
+	color:#606060;
+}
+.popup-price {
+	font-size:14px;
+}
+.popup-price span {
+	font-size:18px;
+	color:#01c0fe;
+}
+.popup-form textarea.form-control {
+	resize:none;
+	height:100px;
+	min-height:100px;
+	background:#fff;
+	border-radius:3px;
+	border-color:#e6e6e6;
+	box-shadow:none;
+}
+.popup-form input[type="text"].form-control,
+.popup-form input[type="email"].form-control,
+.popup-form select[multiple],
+.popup-form select[size],
+.popup-form select,
+.popup-date input {
+	background:#fff;
+	height:42px;
+	line-height:16px;
+	font-size:14px;
+	border-color:#e6e6e6;
+	box-shadow:none;
+	border-radius:3px;
+	color:#555;
+	padding:0 10px;
+}
+.popup-form select[multiple] {
+	height:auto;
+}
+.popup-form select {
+	width:100%;
+	display:block;
+	border:1px solid #e6e6e6;
+}
+.popup-date input[type="text"] {
+	width:30%;
+	border:1px solid #e6e6e6;
+	background:#fff;
+}
+.popup-form input[type="text"].form-control:focus,
+.popup-form input[type="email"].form-control:focus,
+.popup-form textarea.form-control:focus,
+.popup-form select:focus,
+.popup-date input[type="text"]:focus {
+	border-color:#13b6f9;
+	box-shadow:none;
+}
+.popup-date img {
+	margin:10px 0 0 5px;
+}
+
+.form-control.popup-form-captha {
+	width:177px;
+	float:left;
+}
+.popup-form-recaptcha {
+	float:left;
+	width:32px;
+	height:32px;
+	background:url(images/reload.gif) 0 0 no-repeat;
+	border:0;
+	margin:5px 0 0 0;
+}
+.form-control.popup-quantity {
+	width:10%;
+	float:left;
+	text-align:center;
+}
+.popup-control {
+	float:left;
+	margin:7px 0 0 10px;
+}
+.popup-control-calc {
+	border:0;
+	cursor:pointer;
+	width:7px;
+	height:4px;
+	display:block;
+}
+.popup-control-calc.up {
+	background:url(images/up.gif) 0 0 no-repeat;
+}
+.popup-control-calc.down {
+	background:url(images/down.gif) 0 0 no-repeat;
+	margin-top:20px;
+}
+
+.popup-order-confirm {
+	text-align:center;
+}
+.popup-order-confirm div {
+	font-size:16px;
+	text-align:left;
+	background:url(images/apply.png) 0 0 no-repeat;
+	display:inline-block;
+	padding:15px 0 0 55px;
+	height:48px;
+}
+
+/*
+.popup-form input:invalid,
+.popup-form textarea:invalid {
+	border-color:#f95552;
+}
+.popup-form input:valid,
+.popup-form textarea:valid {
+	border-color:#4ded75;
+}
+*/

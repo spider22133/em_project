@@ -1,0 +1,1059 @@
+@charset "UTF-8";
+/* -------------------------------- 
+
+
+/* -------------------------------- 
+
+CATALOG
+
+-------------------------------- */
+
+.catalog-wrapper {
+    clear: both;
+    display: block;
+    position: relative;
+    height: 45px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.catalog-trigger {
+    display: block;
+    position: relative;
+    padding: 0 36px;
+    line-height: 45px;
+    background-color: #D9017A;
+    color: #ffffff;
+}
+
+.catalog-trigger:hover {
+    background-color: #ee3b70;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.catalog-trigger::before, .catalog-trigger::after {
+    /* this is the arrow inside the dropdown trigger*/
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    height: 2px;
+    width: 9px;
+    background: #ffffff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: width 0.3s, -webkit-transform 0.3s;
+    -moz-transition: width 0.3s, -moz-transform 0.3s;
+    transition: width 0.3s, transform 0.3s;
+}
+
+.catalog-trigger::before {
+    right: 22px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.catalog-trigger::after {
+    right: 17px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 1170px) {
+
+    .catalog-wrapper {
+        display: none;
+    }
+
+    .catalog-trigger {
+        display: none;
+    }
+
+}
+
+.catalog h2,
+.catalog-content a,
+.catalog-content ul a {
+    height: 50px;
+    line-height: 50px;
+}
+
+.catalog h2,
+.catalog-content a,
+.catalog-content ul a,
+.catalog-content .divider {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.catalog {
+    position: fixed;
+    z-index: 1020;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% !important;
+    background-color: #D9017A;
+    color: #ffffff;
+    visibility: hidden;
+    /* Force Hardware Acceleration */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
+    -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
+    transition: transform 0.5s 0s, visibility 0s 0.5s;
+}
+
+.catalog h2 {
+    /* dropdown title - mobile version only */
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+    background-color: #8C54C1;
+    border-bottom: 1px solid #704380;
+    margin: 0;
+}
+
+.catalog .close-button {
+    /* 'X' close icon - mobile version only */
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    color: transparent;
+}
+
+.catalog .close-button::after, .catalog .close-button::before {
+    /* this is the 'X' icon */
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    height: 20px;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.catalog .close-button::after {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.catalog .close-button::before {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.catalog.dropdown-is-active {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0s;
+    -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0s;
+    transition: transform 0.5s 0s, visibility 0s 0s;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .catalog .close-button {
+        top: 5px;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .catalog {
+        position: inherit;
+        z-index: 1;
+        float: left;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        color: #ffffff;
+        visibility: hidden;
+    }
+
+    .catalog h2, .catalog .close-button {
+        /* on desktop - hide title and 'X' */
+        display: none;
+    }
+
+    .catalog.dropdown-is-active {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.catalog-content, .catalog-content ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    padding-top: 50px;
+}
+
+.catalog-content a, .catalog-content ul a {
+    display: block;
+    color: #ffffff;
+    /* truncate text with ellipsis if too long */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-top-width: 1px;
+    border-color: #d52257;
+    border-style: solid;
+    text-decoration: none;
+    background: none;
+}
+
+.catalog-content .catalog-secondary div.menu-img {
+    display: none;
+}
+
+.catalog-content li:first-of-type > a, .catalog-content ul li:first-of-type > a {
+    border-top-width: 0;
+}
+
+.catalog-content li:last-of-type > a, .catalog-content ul li:last-of-type > a {
+    border-bottom-width: 1px;
+}
+
+.catalog-content .divider, .catalog-content ul .divider {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0b0e23;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #585a70;
+    text-transform: uppercase;
+}
+
+.catalog-content .divider + li > a, .catalog-content ul .divider + li > a {
+    border-top-width: 0;
+}
+
+.catalog-content a, .catalog-content .catalog-search, .catalog-content .divider, .catalog-content ul a, .catalog-content ul .catalog-search, .catalog-content ul .divider {
+    /* Force Hardware Acceleration */
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.catalog-content.is-hidden, .catalog-content ul.is-hidden {
+    /* push the secondary dropdown items to the right */
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+.catalog-content.is-hidden > li > a, .catalog-content.is-hidden > li > .catalog-search, .catalog-content.is-hidden > .divider, .catalog-content.move-out > li > a, .catalog-content.move-out > li > .catalog-search, .catalog-content.move-out > .divider, .catalog-content ul.is-hidden > li > a, .catalog-content ul.is-hidden > li > .catalog-search, .catalog-content ul.is-hidden > .divider, .catalog-content ul.move-out > li > a, .catalog-content ul.move-out > li > .catalog-search, .catalog-content ul.move-out > .divider {
+    /* lower down the dropdown items opacity - when secondary dropdown slides in or for dropdown items hidden on the right */
+    opacity: 0;
+}
+
+.catalog-content.move-out > li > a, .catalog-content.move-out > li > .catalog-search, .catalog-content.move-out > .divider, .catalog-content ul.move-out > li > a, .catalog-content ul.move-out > li > .catalog-search, .catalog-content ul.move-out > .divider {
+    /* push the dropdown items to the left when secondary dropdown slides in */
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.dropdown-is-active .catalog-content, .dropdown-is-active .catalog-content ul {
+    -webkit-overflow-scrolling: touch;
+}
+
+.affix {
+    position: static;
+}
+
+.catalog-secondary > .col-md-8 {
+
+}
+
+@media only screen and (min-width: 1170px) {
+    .affix {
+        position: fixed;
+        top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .catalog {
+        background-color: transparent;
+    }
+
+    .catalog-content {
+        position: relative;
+        padding: 0;
+        height: auto;
+        width: 100%;
+        float: left;
+        overflow: visible;
+        background: transparent;
+    }
+
+    .catalog-content ul {
+        position: static;
+        height: auto;
+        width: auto;
+        background: transparent;
+        overflow: visible;
+        z-index: 5;
+    }
+
+    .catalog-content > li {
+        float: left;
+        text-align: center;
+        width: 14%; /* fallback for non-calc() browsers */
+        width: calc(100% / 7);
+        display: inline;
+        text-align: -webkit-match-parent;
+        /* border-right: 1px solid #d52257; */
+        border-left: 1px solid #FF5587;
+    }
+
+    .catalog-content > li:nth-child(2) {
+        border-left: 1px solid #FF5587;
+    }
+
+    .catalog-content > li:nth-child(8) {
+        border-right: 1px solid #FF5587;
+    }
+
+    .catalog-content a, .catalog-content ul a {
+        position: relative;
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        color: #fff;
+        border-top-width: 0px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow: hidden;
+        border-bottom: none;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        will-change: opacity;
+
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .catalog-content > li > a {
+        font-size: 0.9em;
+        text-align: center;
+        padding: 0;
+    }
+
+    .catalog-content.is-hidden, .catalog-content ul.is-hidden {
+        /*secondary navigations hidden by default */
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    /*
+     .catalog-content .catalog-secondary.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+        -moz-transition: opacity .3s 0s, visibility 0s .3s;
+        transition: opacity .3s 0s, visibility 0s .3s;
+      } */
+    .catalog-content.move-out > li > a, .catalog-content ul.move-out > li > a {
+        /* push the navigation items to the left - and lower down opacity - when secondary nav slides in */
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 0;
+    }
+
+    .catalog-content .divider, .catalog-content ul .divider {
+        background-color: transparent;
+        color: #b3b3b3;
+        border-top: 1px solid #ebebeb;
+    }
+
+    .catalog-content .divider + li > a, .catalog-content ul .divider + li > a {
+        border-top-width: 1px;
+    }
+
+    .catalog-content.is-hidden > li > a, .catalog-content.is-hidden > li > .catalog-search, .catalog-content.is-hidden > .divider, .catalog-content.move-out > li > a, .catalog-content.move-out > li > .catalog-search, .catalog-content.move-out > .divider, .catalog-content ul.is-hidden > li > a, .catalog-content ul.is-hidden > li > .catalog-search, .catalog-content ul.is-hidden > .divider, .catalog-content ul.move-out > li > a, .catalog-content ul.move-out > li > .catalog-search, .catalog-content ul.move-out > .divider {
+        /* reset mobile style */
+        opacity: 1;
+
+    }
+
+    .catalog-content > li:last-of-type a {
+        border-bottom: none;
+    }
+
+    .no-touch .catalog-content > li:not(.has-children) a:hover {
+        color: #333;
+    }
+
+    .catalog-content.move-out > li > a, .catalog-content.move-out > li > .catalog-search, .catalog-content.move-out > .divider {
+        /* reset mobile style */
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .catalog-content .catalog-secondary {
+        /* dropdown menu style */
+        position: absolute;
+        top: 40px;
+
+        width: 100%;
+        right: 0;
+        background: #ffffff;
+        padding: 48px 64px 29px;
+        border-bottom: 2px solid #e2e3df;
+        border-left: 2px solid #e2e3df;
+        border-right: 2px solid #e2e3df;
+        z-index: 9999;
+        -webkit-box-shadow: 0px 6px 10px -5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 6px 10px -5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 6px 10px -5px rgba(0, 0, 0, 0.75);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+        -moz-transition: opacity .3s 0s, visibility 0s 0s;
+        transition: opacity .3s 0s, visibility 0s 0s;
+
+    }
+
+    /*.catalog-secondary  .col-md-8 > h1 {
+      font-family: 'Aquarelle-Regular';
+      font-size: 32px;
+      display: block;
+      color: #333;
+      margin: 0 0 5px 15px;
+      padding-bottom: 25px;
+       width: 60%;
+       border-bottom: 1px solid #999;
+    } */
+    .catalog-content .catalog-secondary::after, .catalog-content .catalog-gallery::after, .catalog-content .catalog-icons::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    .open-to-left .catalog-content .catalog-secondary, .open-to-left .catalog-content .catalog-gallery, .open-to-left .catalog-content .catalog-icons {
+        /* use the .open-to-left class if you want to open the dropdown on the left */
+        left: auto;
+        right: 100%;
+    }
+
+    .catalog-content .catalog-secondary.is-hidden, .catalog-content .catalog-gallery.is-hidden, .catalog-content .catalog-icons.is-hidden {
+        /* reset mobile style */
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .catalog-content .catalog-secondary.fade-in, .catalog-content .catalog-gallery.fade-in, .catalog-content .catalog-icons.fade-in {
+        /* animate secondary dropdown items when hovering over of of the .catalog-content list items */
+        -webkit-animation: fade-in 0.2s;
+        -moz-animation: fade-in 0.2s;
+        animation: fade-in 0.2s;
+    }
+
+    .catalog-content .catalog-secondary.fade-out, .catalog-content .catalog-gallery.fade-out, .catalog-content .catalog-icons.fade-out {
+        /* animate secondary dropdown items when hovering over of of the .catalog-content list items */
+        -webkit-animation: fade-out 0.2s;
+        -moz-animation: fade-out 0.2s;
+        animation: fade-out 0.2s;
+    }
+
+    .catalog-content .catalog-secondary > .go-back, .catalog-content .catalog-gallery > .go-back, .catalog-content .catalog-icons > .go-back {
+        display: none;
+    }
+
+    .catalog-content .catalog-secondary .catalog-item, .catalog-content .catalog-secondary a, .catalog-content .catalog-gallery .catalog-item, .catalog-content .catalog-gallery a, .catalog-content .catalog-icons .catalog-item, .catalog-content .catalog-icons a {
+        border: none;
+    }
+
+    .catalog-content .catalog-icons li {
+        width: 32%;
+        float: left;
+        margin: 0 2% 20px 0;
+    }
+
+    .catalog-content .catalog-icons .catalog-item {
+        border-bottom: none;
+        height: 80px;
+        line-height: 1.2;
+        padding: 24px 0 0 85px;
+        position: relative;
+    }
+
+    .catalog-content .catalog-icons .catalog-item p {
+        display: block !important;
+    }
+
+    .catalog-content .catalog-secondary::before {
+        /* this is the separation line in the middle of the .catalog-secondary element */
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 15px;
+        height: 0;
+        width: 0;
+        background-color: transparent;
+    }
+
+    .catalog-content .catalog-secondary > li.level-2 > a {
+        color: #333;
+        font-size: 0.9rem;
+        font-weight: 700;
+        border-bottom: none;
+        text-transform: uppercase;
+    }
+
+    .level-2 {
+        float: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 20%;
+        border-left: 2px solid #cecece;
+        margin-top: 20px;
+    }
+
+    /* .catalog-content .catalog-secondary > div > li > a::after, .catalog-content .catalog-secondary > div > li > a::before {
+       !* hide the arrow *!
+       display: none;
+     }
+
+     .catalog-content .catalog-secondary.move-out > div > li > a {
+       !* reset mobile style *!
+       -webkit-transform: translateX(0);
+       -moz-transform: translateX(0);
+       -ms-transform: translateX(0);
+       -o-transform: translateX(0);
+       transform: translateX(0);
+     }
+
+     .catalog-content .catalog-secondary > div > li {
+       !* change the height according to your needs - you can even set height: auto *!
+       !* here you set the number of columns - use width percentage *!
+
+       border-right: none;
+       overflow: hidden;
+       overflow-x: hidden;
+       overflow-y: auto;
+       -webkit-overflow-scrolling: touch;
+
+     }*/
+    .catalog-content .catalog-secondary div.menu-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        z-index: -1;
+    }
+
+    .menu-img img {
+    }
+
+    .catalog-content .catalog-secondary, .catalog-content .catalog-gallery, .catalog-content .catalog-icons {
+        padding: 20px 40px 70px;
+    }
+
+    .catalog-content .catalog-secondary > div > li:nth-child(4n+2) {
+        margin-right: 0;
+        border-right: none;
+    }
+
+    .catalog-content .catalog-secondary > div > li:nth-child(5n+2) {
+        margin-right: 0;
+        border-right: none;
+    }
+
+    .catalog-content .catalog-secondary > div > li > ul {
+        /* reset mobile style */
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        transform: translate(0);
+        position: static;
+        height: auto;
+        display: none;
+    }
+
+    .catalog-content .catalog-secondary > div > li > ul > .go-back {
+        display: none;
+    }
+
+    .catalog-content .catalog-secondary a {
+        height: 17px;
+        line-height: 17px;
+        padding: 0 5% 0 0;
+        color: #666;
+        font-size: .85rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .no-touch .catalog-content .catalog-secondary a:hover {
+        color: #000;
+    }
+
+    .catalog-content .catalog-secondary ul {
+        padding-top: 5px;
+        overflow: visible;
+        height: auto;
+    }
+
+    .catalog-content .catalog-secondary ul ul {
+        /* tertiary navigation */
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .catalog-content .catalog-secondary ul ul .go-back {
+        display: block;
+    }
+
+    .catalog-content .catalog-secondary ul ul .go-back a {
+        color: transparent;
+    }
+
+    .catalog-content .catalog-secondary ul ul .go-back a:hover {
+        color: transparent;
+    }
+
+    .catalog-content .catalog-secondary ul ul .see-all {
+        display: block;
+    }
+
+    .catalog-content .catalog-secondary ul ul.is-hidden {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    .catalog-content .catalog-secondary .go-back a {
+        padding-left: 20px;
+        color: transparent;
+    }
+
+    .catalog-content .catalog-secondary .go-back a::before, .catalog-content .catalog-secondary .go-back a::after {
+        left: 0;
+    }
+
+    .catalog-content > .has-children > ul {
+        visibility: hidden;
+    }
+
+    .catalog-content > .has-children > ul.is-active {
+        /* when hover over .catalog-content items - show subnavigation */
+        visibility: visible;
+    }
+
+    .catalog-content > .has-children > .catalog-secondary.is-active > div > li > ul {
+        /* if .catalog-secondary is visible - show also subnavigation */
+        visibility: visible;
+    }
+
+    .catalog-content > .has-children > a.is-active {
+        /* hover effect for .catalog-content items with subnavigation */
+        background: #fff;
+        color: #333;
+    }
+
+    .catalog-content .go-back, .catalog-content .see-all {
+        display: none;
+    }
+
+    .catalog-content .catalog-secondary > .see-all {
+        /* this is the BIG See all button at the bottom of the dropdown menu */
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 40px;
+        width: 100%;
+        overflow: hidden;
+        /* reset some inherited style */
+        margin: 0;
+        padding: 0;
+    }
+
+    .catalog-content .catalog-secondary > .see-all a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 40px;
+        border-top: 1px solid #e2e3df;
+        /* reset some inherited style */
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+        -webkit-transition: color 0.2s, background 0.2s, border 0.2s;
+        -moz-transition: color 0.2s, background 0.2s, border 0.2s;
+        transition: color 0.2s, background 0.2s, border 0.2s;
+    }
+
+    .catalog-content .catalog-secondary > .see-all a:hover {
+        border-color: #704380;
+        border-top-width: 3px;
+        color: #ffffff;
+    }
+
+    .catalog-content .see-all a {
+        /* different style for the See all links */
+        color: #000 !important;
+    }
+}
+
+.catalog-content .see-all a {
+    /* different style for the See all links */
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1170px) {
+
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: visible;
+    }
+}
+
+@-moz-keyframes fade-out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: visible;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: visible;
+    }
+}
+
+.has-children > a, .go-back a {
+    position: relative;
+    text-decoration: none;
+}
+
+.has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
+    /* arrow icon in CSS - for element with nested unordered lists */
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    display: inline-block;
+    height: 2px;
+    width: 10px;
+    background: #ffffff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.has-children > a::before, .go-back a::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.has-children > a::after, .go-back a::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 1170px) {
+
+    .has-children > a::before, .has-children > a::after {
+        right: 15%;
+        display: none;
+    }
+
+    .catalog-content > .has-children > a::before, .catalog-content > .has-children > a::after {
+        display: none;
+        width: 9px;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        background: #fff;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: width 0.3s, -webkit-transform 0.3s;
+        -moz-transition: width 0.3s, -moz-transform 0.3s;
+        transition: width 0.3s, transform 0.3s;
+    }
+
+    .catalog-content > .has-children > a::before {
+        right: 20px;
+    }
+
+    .catalog-content > .has-children > a::after {
+        right: 15px;
+    }
+
+    .catalog-content > .has-children > a.is-active::before, .catalog-content > .has-children > a.is-active::after {
+        width: 14px;
+        background: #000;
+    }
+
+    .catalog-content > .has-children > a.is-active::before {
+        -webkit-transform: translateX(5px) rotate(-45deg);
+        -moz-transform: translateX(5px) rotate(-45deg);
+        -ms-transform: translateX(5px) rotate(-45deg);
+        -o-transform: translateX(5px) rotate(-45deg);
+        transform: translateX(5px) rotate(-45deg);
+    }
+
+    .catalog-content > .has-children > a.is-active::after {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
+        background: #5b5b5b;
+    }
+
+    .catalog-content > .has-children > a {
+        /* main navigation arrows on larger devices */
+        padding-right: 0px !important;
+    }
+
+    .has-children > a:hover::before, .has-children > a:hover::after, .go-back a:hover::before, .go-back a:hover::after {
+        background: #000;
+    }
+
+    .catalog-content > .has-children > a:hover::before, .catalog-content > .has-children > a:hover::after {
+        background: #fff;
+    }
+
+    .catalog-content > .has-children > a.is-active:hover::before, .catalog-content > .has-children > a.is-active:hover::after {
+        background: #000;
+    }
+
+}
+
+.has-children > a {
+    padding-right: 40px;
+
+}
+
+.has-children > a::before, .has-children > a::after {
+    /* arrow goes on the right side - children navigation */
+    right: 20px;
+    -webkit-transform-origin: 9px 50%;
+    -moz-transform-origin: 9px 50%;
+    -ms-transform-origin: 9px 50%;
+    -o-transform-origin: 9px 50%;
+    transform-origin: 9px 50%;
+}
+
+@media only screen and (min-width: 1170px) {
+    .open-to-left .catalog-content > .has-children > a {
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+
+    .open-to-left .catalog-content > .has-children > a::before, .open-to-left .catalog-content > .has-children > a::after {
+        right: auto;
+        left: 20px;
+        -webkit-transform-origin: 1px 50%;
+        -moz-transform-origin: 1px 50%;
+        -ms-transform-origin: 1px 50%;
+        -o-transform-origin: 1px 50%;
+        transform-origin: 1px 50%;
+    }
+}
+
+.catalog-content .go-back a {
+    padding-left: 40px;
+}
+
+.catalog-content .go-back a::before, .catalog-content .go-back a::after {
+    /* arrow goes on the left side - go back button */
+    left: 20px;
+    -webkit-transform-origin: 1px 50%;
+    -moz-transform-origin: 1px 50%;
+    -ms-transform-origin: 1px 50%;
+    -o-transform-origin: 1px 50%;
+    transform-origin: 1px 50%;
+}
+
+.main-content {
+    background-color: #e6e6e6;
+    min-height: calc(100vh - 100px);
+    padding: 2em 5%;
+    line-height: 2;
+}
+
+.no-js .catalog-wrapper:hover .catalog {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.no-js .catalog-wrapper .close-button {
+    display: none;
+}
+
+/*  _-----------------   end catalog  ----------------------   */

@@ -1,0 +1,136 @@
+input[type='group'] {
+	display: none;
+}
+
+.voptions-description{
+	border-radius: 4px;
+	border: 1px solid #D7D6BA;
+	background-color: #FEFDEA;
+	margin: 5px;
+	padding: 3px;
+}
+
+.voptions-add-button{
+	box-shadow: 0 0 1px rgba(0,0,0,.3), 0 1px 1px rgba(0,0,0,.3), inset 0 1px 0 #fff, inset 0 0 1px rgba(255,255,255,.5);
+	/*background-color: #e0e9ec;*/
+	background-image: -webkit-linear-gradient(bottom, #d7e3e7, #fff) !important;
+	background-image: -moz-linear-gradient(bottom, #d7e3e7, #fff)!important;
+	background-image: -ms-linear-gradient(bottom, #d7e3e7, #fff)!important;
+	background-image: -o-linear-gradient(bottom, #d7e3e7, #fff)!important;
+	background-image: linear-gradient(bottom, #d7e3e7, #fff)!important;
+	background-color: #CCD7DB;
+	margin: 4px;
+	padding: 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.voptions-add-button:hover{
+	background-image: -webkit-linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+	background-image: -moz-linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+	background-image: -ms-linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+	background-image: -o-linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+	background-image: linear-gradient(top, #f8f8f9, #f2f6f8)!important;
+}
+
+.voptions-group-container{
+	padding: 4px;
+}
+
+.voptions-group-div{
+	background-color: #E5EEEF;
+	border-radius: 4px;
+	padding: 6px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.voptions-group-table{
+	width: 100%
+}
+
+.voptions-group-title{
+	background-color: #D9E2E4;
+	/*width: 100%;*/
+	text-align: center;
+	padding: 5px;
+	margin: 3px;
+	margin-right: 0;
+	margin-left: 0;
+	border-radius: 30px 30px 0 0;
+}
+.voptions-group-description{
+	border-radius: 4px;
+	border: 1px solid #D7D6BA;
+	background-color: #FEFDEA;
+	margin: 5px;
+	margin-right: 0;
+	margin-left: auto;
+	width: 60%;
+	padding: 3px;
+} 
+
+.voptions-textarea-choise-checkbox{
+	display: none !important;
+}
+
+.voptions-textarea-choise-checkbox-label{
+	text-decoration: none;
+	border-bottom: 1px dashed #000080;
+	cursor: pointer;
+}
+
+.voptions-textarea-choise-checkbox:checked ~ .voptions-textarea-choise-checkbox-label{
+
+}
+
+.voptions-textarea-choise{
+	display: none;
+}
+
+/*.voptions-textarea-choise::before{
+	padding: 6px;
+	padding-bottom: 8px;
+	font-size: 14px;
+	content: "Нажмите на св-во, чтобы вставить его";
+}
+*/
+.voptions-textarea-choise-checkbox:checked ~ .voptions-textarea-choise{
+	display: block;
+}
+
+.voptions-textarea-choise-simple{
+	padding: 2px;
+}
+
+.voptions-textarea-choise-simple a{
+	text-decoration: none;
+	border-bottom: 1px dashed;
+	color: blue;
+	position: relative;
+}
+
+.voptions-textarea-choise-simple a:hover{
+	color: black;
+}
+
+/*.voptions-textarea-choise-simple a:hover::after{
+	content: "Нажмите на св-во, чтобы вставить его";
+	position: absolute; 
+    left: -20px;
+    bottom: 100%;
+    z-index: 1; 
+    background: rgba(255,255,230,0.9);  Полупрозрачный цвет фона 
+    font-family: Arial, sans-serif; 
+    font-size: 11px; 
+    padding: 5px 10px; 
+    border: 1px solid #333;
+}
+
+.voptions-textarea-choise-simple a:hover::after:hover{
+	display: none;
+}
+*/
