@@ -120,7 +120,7 @@ $theme = COption::GetOptionString("main", "wizard_eshop_bootstrap_theme_id", "bl
         fbq('init', '926016264224162');
         fbq('track', 'PageView');
     </script>
-
+    <script data-skip-moving="true" charset="UTF-8" src="//cdn.sendpulse.com/9dae6d62c816560a842268bde2cd317d/js/push/db48b7c6a088719fbd1b257c6296f61f_1.js" async></script>
 
 </head>
 <body class="bx-background-image bx-<?= $theme ?>">
